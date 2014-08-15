@@ -1,59 +1,26 @@
 @charset "UTF-8";
-/* ******************************************************************
-	--common.css--
-****************************************************************** */
-/*==================================================================
-	1. Common setting
-===================================================================*/
 /* ------------------------------------------------------------------
-	1-1. Reset styles
+	1-1. Common styles
 -------------------------------------------------------------------*/
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead {
-	margin: 0;
-	padding: 0;
+html {overflow-y: scroll; color: black; background-color: white;}
+a:link, a:visited {color: blue; text-decoration: none;}
+a:hover, a:active {color: blue; text-decoration: underline;}
+body {
+	font: 14px/1 Helvetica, Arial, sans-serif;
+	background-color: white;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	word-wrap: break-word;
 }
+select, input, button, textarea, button {font: 1em/1 Helvetica, Arial, sans-serif;}
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-fieldset, img {border: none;}
-address, caption, cite, code, dfn, em, strong, th, var {
-	font-style: normal;
-	font-weight: normal;
-}
-ul, ol {list-style: none;}
-caption, th {text-align: left;}
-h1, h2, h3, h4, h5, h6 {
-	font-size: 100%;
-	font-weight: normal;
-}
-q:before, q:after {content: "";}
-abbr, acronym {
-	border: none;
-	font-variant: normal;
-}
-sup {vertical-align: text-top;}
-sub {vertical-align: text-bottom;}
-input, textarea, select {
-	font-family: inherit;
+	font: 100%;
 	font-size: inherit;
-	font-weight: inherit;
 }
-legend {color: #000;}
-a img, map a {border: none;}
-a:hover, a:active, a:focus {outline: 0;}
-embed {width: 100%;}
-img {-ms-interpolation-mode: bicubic;}
-
-/* General styles
--------------------------------------------------------------------*/
-table {empty-cells: show;}
-input {line-height: 1;}
-form img, input, select {vertical-align: middle;}
-textarea {resize: vertical;}
-select {padding: 1px;}
-label {margin-right: 5px;}
-legend {display: none;}
+pre, code, kbd, samp, tt {
+	font-family: monospace;
+	line-height: 1;
+}
 
 /* ------------------------------------------------------------------
 	1-2. VisualFormattingModel styles
